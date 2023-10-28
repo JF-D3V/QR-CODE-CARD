@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* CUSTOM PROPERTIES */
+:root {
+  /* COLOURS */
+  --primary-font-col: hsl(218, 44%, 22%);
+  --secondary-font-col: hsl(220, 15%, 55%);
+
+  --shadow-col: rgba(0, 0, 0, 0.15);
+
+  --bg-col: hsl(212, 45%, 89%);
+
+  /* FONTS */
+  --primary-font: outfit;
+}
+
+/* GENERAL PROPERTIES */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--primary-font), sans-serif;
+  letter-spacing: 0.2px;
+  background-color: var(--bg-col);
+  position: relative;
+}
+
+/* CLASS PROPERTIES */
+
+.container {
+  max-width: 144rem;
+  height: 100vh;
+}
+
+.card {
+  max-width: 32rem;
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 24px var(--shadow-col);
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qr-asset {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0.4rem;
+}
+
+.body-copy {
+  padding: 1.8rem;
+}
+
+.card-title {
+  font-size: 2.2rem;
+  color: var(--primary-font-col);
+  padding-bottom: 1.6rem;
+}
+
+.card-details {
+  font-size: 1.5rem;
+  color: var(--secondary-font-col);
+  padding-bottom: 1rem;
+}
